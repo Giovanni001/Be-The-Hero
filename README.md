@@ -17,16 +17,16 @@
       "npm start"
 
 ### Instalando o knex.js
-  ## O que é ?
+  #### O que é ?
       Um Query Builder, ultilizado para a manipulação do MySQL usando notação JavaScript
       Para instalar o knex:
         npm install knex
   
-  ## Precisamos identificar qual banco vamos usar com o knex, nesse caso usaremos Sqlite3.
-  ## Para instalar o sqlite execute o comando:
+  #### Precisamos identificar qual banco vamos usar com o knex, nesse caso usaremos Sqlite3.
+  #### Para instalar o sqlite execute o comando:
       npm install sqlite3
 
-## Inicializando o knex:
+### Inicializando o knex:
     Digitar o comando npx knex init (comando cria um arquivo que realiza toda a conexão e configuração com o banco de dados)
     npx =  (Executa um pacote externo sem a necessidade de instalar ele de forma global na maquina)
 
