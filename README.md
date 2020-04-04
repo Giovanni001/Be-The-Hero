@@ -1,40 +1,42 @@
 # Be-The-Hero
 
 ### Iniciar um projeto no back:
-  npm init -y
-  npm install express
-  criar um index.js na raiz do projeto (responsavel por armazenar a parte principal da aplica�ao)
+    npm init -y
+    npm install express
+    criar um index.js na raiz do projeto (responsavel por armazenar a parte principal da aplicação)
 
 ### Instalando o nodemon
-  npm install nodemon -D (-D é ultilizado para indicar que esta ferramente sera ultilizada apenas como dependencia de desenvolvimento, ou seja, mais tarde ela nao sera necessaria)
-  Configurando o nodemon: No package.json substitua a parte do "scripts" com o codigo abaixo:
- 
-   "scripts": {
-      "start": "nodemon index.js"
-     },
+    npm install nodemon -D (-D é ultilizado para indicar que esta ferramente sera ultilizada apenas como dependencia de desenvolvimento, ou seja, mais tarde ela nao sera necessaria)
+    Configurando o nodemon: No package.json substitua a parte do "scripts" com o codigo abaixo:
 
-   Para executar o servidor com o nodemon instalado digite:
-    "npm start"
+     "scripts": {
+        "start": "nodemon index.js"
+       },
+
+     Para executar o servidor com o nodemon instalado digite:
+      "npm start"
 
 ### Instalando o knex.js
-  O que é ?
-    Um Query Builder, ultilizado para a manipula��o do MySQL usando nota��o JavaScript
-    Para instalar o knex:
-      npm install knex
+  ## O que é ?
+      Um Query Builder, ultilizado para a manipulação do MySQL usando notação JavaScript
+      Para instalar o knex:
+        npm install knex
   
-  Precisamos identificar qual banco vamos usar o knex, nesse caso vai ser Sqlite3
-  Para instalar o sqlite execute o comando:
-    npm install sqlite3
+  ## Precisamos identificar qual banco vamos usar com o knex, nesse caso usaremos Sqlite3.
+  ## Para instalar o sqlite execute o comando:
+      npm install sqlite3
 
-  Digitar o comando npx knex init (comando cria um arquivo que realiza toda a conexão e configuração com o banco de dados)
-  npx =  (Executa um pacote externo sem a necessidade de instalar ele de forma global na maquina)
+## Inicializando o knex:
+    Digitar o comando npx knex init (comando cria um arquivo que realiza toda a conexão e configuração com o banco de dados)
+    npx =  (Executa um pacote externo sem a necessidade de instalar ele de forma global na maquina)
 
 ### Usando o knext.js para criar migrations:
-  Migrations sao como uma forma de voce deixar as tabelas no banco de uma maneira que os outros devs possam usar apênas um comando para   instalá-las ao invêz de criar as tabelas manualmente.
-  Antes de tudo, vá no arquivo knext.js e logo abaixo de connection adicionar o seguinte codigo: (esse codigo indica que, as               migrations ao serem criadas automaticamente, vao ser criadas dentro dessa pasta.
-    migrations: {
-        directory: "./src/database/migrations"
-      }
+    Migrations sao como uma forma de voce deixar as tabelas no banco de uma maneira que os outros devs possam usar apênas um comando         para instalá-las ao invêz de criar as tabelas manualmente. 
+    Antes de tudo, vá no arquivo knext.js e logo abaixo de connection adicionar o seguinte codigo: (esse codigo indica que, as               migrations ao serem criadas automaticamente, vao ser criadas dentro dessa pasta.
+      migrations: {
+          directory: "./src/database/migrations"
+        }
+        
 ### Criar uma pasta database em "src"
       Dentro de database criar uma pasta "migrations"
       Para criar a primeira migfration vamos usar o comando: npx knex migrate:make create_ongs
@@ -48,7 +50,6 @@
 ### Para criarmos um projeto no React usaremos o comando:
       npx create-react-app nomedoprojeto (nomedoprojeto: é um nome opicional que você escolhe para o projeto)
 
-  
 ### Bom, quando a estrutura é gerada, temos alguns arquivos que não ultilizaremos entao podemos apaga-los
       Apague os seguintes arquivos:
        REAME-ME.txt
@@ -86,8 +87,8 @@
     "index.js" e pronto, o <App /> será o nosso componente principal.
 
 ### O que é JSX:
-  O conceito de JSX permite realizar a escrita de códigos javascript e html no mesmo código,
-  isso da um controle maior sobre a aplicação e permite você deixa-la mais manipulavel e concisa.
+    O conceito de JSX permite realizar a escrita de códigos javascript e html no mesmo código,
+    isso da um controle maior sobre a aplicação e permite você deixa-la mais manipulavel e concisa.
 
 ### O que são as props no React:
     Um conceito muito importante, 'props' (Properties) no React são dados que podem ser repassadas
